@@ -16,7 +16,7 @@ router.get('/', (req, res, next) => {
 
 
 //pay simple
-router.post('/pay' ,
+router.post('/pay' , checkAuth,
 paymentController.createPayment);
 
 
